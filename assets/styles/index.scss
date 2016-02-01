@@ -1,12 +1,6 @@
-$background-color: #fefefe;
-$font-color: #4e4e4e;
+@import 'typography';
+@import 'colors'; // all imports belong on the master file.
+@import 'theme'; // CSS operates on global scope!!!!
 
-body {
-  background-color: $background-color;
-  color: $font-color;
-}
-
-.quote {
-  font-size: 30px;
-  background-color: #e5e5e5;
-}
+// this must come last!
+@import 'breakpoints';
